@@ -15,12 +15,16 @@
     - Write notes about functions needed, do the HTML and CSS styling of the game.
 
 2. INIT
-    - Create all the questions with the 4 possible answers and a correct answer
-    - Make questions go in a random order
-    - Deal with correct/wrong answers
+    - Add "Let's play" button
+    - Create an array with all 20 questions and 4 possible answers and a correct answer
+    - Add next quesion with 4 answers order after each question answered
+    - Add green/red button if the answer is right/wrong, also add timer 3sec once answered
+    - Deal with correct/wrong answers stats
 
 3.  RENDER
-    - Add listener
+    - If question not answered within 10sec then it counts as wrong
+    - Add the function if player has 16/20 answers correct, player wins, otherwise player looses
+    - Add listener ('Click')
     - Add a timer 10sec per question
 
 4.  FINAL
