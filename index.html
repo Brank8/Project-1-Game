@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Trivia Quiz</title>
     <link rel="stylesheet" href="main.css">
     <script defer src="app.js"></script>
 </head>
@@ -18,8 +18,11 @@
             <img id="game-pic" src="newpic.png" class="game-graphic">
         </section>
 
+        <button id="start-button" class="start-button-class">Start Quiz</button>
+        
+        <div id="divId" class="hide">
         <section id="question-display" class="question-display-wrapper">
-            <p id="question-bar" class="questionsClass">#20 How many countries have non-rectangular flag shape? </p>
+            <p id="question-bar" class="questionsClass">Question</p>
         </section>
 
         <section id="answer-button" class="answer-button-wrapper">
@@ -28,6 +31,7 @@
             <button><span id="answerC-id" class="answer">Answer C</span></button>
             <button><span id="answerD-id" class="answer">Answer D</span></button>
         </section>
+    </div>
     </main>  
 </body>
 </html>

@@ -9,46 +9,71 @@ body {
 .container {
     background-color: rgb(74, 134, 232);
     text-align: center;
-    border-color: aqua;
+    border: 20px solid rgb(21, 231, 203);
+    border-style: ridge;
     border-radius: 1rem;
     padding-top: 10px;
     max-width: 500px;
     min-width: 500px;
 }
+
 #span-id {
     background-color: yellow;
     border: 5px solid orange;
-    padding: 7px 20px 0 20px;
     border-radius: 2rem;
+    border-style: inset;
+    padding: 7px 20px 0 20px;
 }
 
 .game-title {
     font-size: 25px;
     font-family: fantasy;
-    padding: 10px;
-    margin-bottom: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
 }
 
 .game-graphic {
-    max-height: 250px;
+    max-height: 300px;
     border-radius: 10px;
 }
 
-.question-display-wrapper {
-    background-color: rgb(16, 223, 175);
-    padding: .5rem;
-    margin: 10px 10px 10px 10px;
-    border: 5px solid white;
-    border-radius: 1rem;
-    font-size:larger
+.start-button-class {
+    background-color: rgb(155, 193, 39);
+    border: 5px solid rgb(214, 123, 201);
+    border-style: solid none dashed none;
+    border-radius: 5rem;
+    font-size: 40px;
+    padding: 50px 100px;
+    margin: 55px 50px 70px 50px;
 }
 
-.answer-button-wrapper button {
+.question-display-wrapper {
+    background-color: rgb(21, 231, 203);
+    border: 5px solid white;
+    border-style: double;
+    border-radius: 1rem;
+    font-size:larger;
+    padding: .3rem;
+    margin: 10px 10px 10px 10px;
+}
+
+.answer-button-wrapper button{
     background-color: yellow;
-    margin: 15px 40px 15px 40px;
     border: 5px solid orange;
     border-radius: 1rem;
-    width: 160px;
-    height: 50px;
+    width: 168px;
+    height: 60px;
+    font-size: larger;
+    margin: 15px 40px 15px 40px;
 }
+
+.answer-button-wrapper :hover {
+    border-color: white;
+    background-color: white;
+}
+
+.hide {
+    display: none;
+}
+
 
