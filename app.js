@@ -1,21 +1,33 @@
 
 const startButton = document.getElementById('start-button');
 const questionContainer = document.getElementById('divId');
-const questionEl = document.getElementById('question-bar')
-const answerEl = document.querySelectorAll('.answer')
+const questionEl = document.getElementById('question-bar');
+const answerEl = document.querySelectorAll('.answer');
+const resetGame = document.getElementById('reset-button');
 
 let counter = 0;
-
-startButton.addEventListener('click', startQuiz)
+let timer;
+let score = 0;
+startButton.addEventListener('click', startQuiz);
+resetGame.addEventListener('click', reset);
 
 function startQuiz() {
-    startButton.classList.add('hide')
-    questionContainer.classList.remove('hide')
-    setNextQuestion()
+    startButton.classList.add('hide');
+    questionContainer.classList.remove('hide');
+    setNextQuestion();
 }
 
 function setNextQuestion() {
-    showQuestion()
+    if (counter < questions.length) {
+    answerEl.forEach(el => {
+        el.style.backgroundColor = 'yellow'
+    })
+    showQuestion();
+    startTimer();
+    } else {
+        questionContainer.classList.add('hide');
+        resetGame.classList.remove('hide');
+    }
 }
 
 function showQuestion(questionBar) {
@@ -26,18 +38,23 @@ function showQuestion(questionBar) {
     answerEl[3].innerText = questions[counter].answers.d
 }
 
+function startTimer() {
+    timer = setTimeout(() => {
+    counter++;
+    setNextQuestion(); 
+    }, 10000);
+}
+
 answerEl.forEach(el => {
-    el.addEventListener('click', selectAnswer)
+    el.addEventListener('click', (e) => {
+        clearTimeout(timer);
+        selectAnswer(e);
+});
 })
 
-function selectAnswer() {
-    counter++
-    showQuestion()
-    }
-
-
-
-
+function reset() {
+    location.reload();
+}
 
 const questions = [
     {
@@ -91,3 +108,19 @@ const questions = [
     correctAnswer: 'b'
 },
 ]
+score = '#spanScore';
+
+function selectAnswer(e) {
+    let userAnswer = e.target.id;
+    let button = e.target
+    if (userAnswer === questions[counter].correctAnswer) {
+        button.style.backgroundColor = 'green'
+        score++;
+    } else {
+        button.style.backgroundColor = 'red'
+    }
+
+
+    counter++;
+    setTimeout(() => setNextQuestion(), 3500)
+}
