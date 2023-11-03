@@ -6,13 +6,21 @@ const answerEl = document.querySelectorAll('.answer');
 const resetGame = document.getElementById('reset-button');
 const scoreEl = document.getElementById('spanScore')
 const gameOver = document.getElementById('score-id')
-
+const changePic = document.getElementById('game-pic')
+const changePic2 = document.getElementById('game-pic2')
+const changePic3 = document.getElementById('game-pic3')
+const lostBackground = document.querySelector('.container')
 
 let counter = 0;
 let timer;
 let score = 0;
+
+lostBackground.classList.remove('hide');
 startButton.addEventListener('click', startQuiz);
 resetGame.addEventListener('click', reset);
+changePic.classList.remove('hide');
+changePic2.classList.add('hide');
+changePic3.classList.add('hide');
 
 function startQuiz() {
     startButton.classList.add('hide');
@@ -32,9 +40,14 @@ function setNextQuestion() {
         questionContainer.classList.add('hide');
         resetGame.classList.remove('hide');
         if (score > 15) {
-        gameOver.innerText = '🏆You win!✅'     
+        gameOver.innerText = '🏆WAY TO GO CHAMP!✅';
+        changePic.classList.add('hide');
+        changePic2.classList.remove('hide');
         } else {
-        gameOver.innerText = '😓You lose!❌'
+        gameOver.innerText = '😢MAYBE NEXT TIME!❌';
+        changePic.classList.add('hide');
+        changePic3.classList.remove('hide');
+        lostBackground.style.backgroundColor = 'red'
         }
     }
 }
@@ -123,7 +136,7 @@ const questions = [
     correctAnswer: 'b'
 },
     {
-        question: 'How many states does USA have?',
+        question: 'How many states does the USA have?',
     answers: {
         a: '50',
         b: '49',
@@ -133,7 +146,7 @@ const questions = [
     correctAnswer: 'a'
 },
     {
-        question: 'How many countries are there in UK?',
+        question: 'How many countries are there in the UK?',
     answers: {
         a: '3',
         b: '4',
@@ -213,7 +226,7 @@ const questions = [
     correctAnswer: 'c'
 },
     {
-        question: 'Which country borders Mexico?',
+        question: 'What country borders Mexico?',
     answers: {
         a: 'Brazil',
         b: 'Panama',
@@ -233,7 +246,7 @@ const questions = [
     correctAnswer: 'b'
 },
     {
-        question: 'What is the largest state in USA?',
+        question: 'What is the largest state in the USA?',
     answers: {
         a: 'California',
         b: 'Texas',
@@ -253,7 +266,7 @@ const questions = [
     correctAnswer: 'c'
 },
     {
-        question: 'How many days is 1 year?',
+        question: 'How many days are in 1 year?',
     answers: {
         a: '365',
         b: '366',
