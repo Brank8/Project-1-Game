@@ -7,6 +7,7 @@ const resetGame = document.getElementById('reset-button');
 const scoreEl = document.getElementById('spanScore')
 const gameOver = document.getElementById('score-id')
 
+
 let counter = 0;
 let timer;
 let score = 0;
