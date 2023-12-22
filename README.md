@@ -22,7 +22,7 @@ Welcome to TRIVIAGRAPHY🌍 - the game where you can put your geography skills t
 
 ## Getting Started
 
-Ready to play? Head to https://brank8.github.io/Triviagraphy/
+Ready to play? Head to [Triviagraphy](https://brank8.github.io/Triviagraphy/)
 
 ## Planned future enhancements
 - Adding more animations

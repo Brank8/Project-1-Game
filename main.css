@@ -1,3 +1,11 @@
+.myLinkedin {
+    display: flex;
+    height: 30vh;
+    justify-content: left;
+    align-items: left;
+}
+
+
 body {
     display: flex;
     height: 95vh;

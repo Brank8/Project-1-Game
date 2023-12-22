@@ -1,4 +1,3 @@
-
 const startButton = document.getElementById('start-button');
 const questionContainer = document.getElementById('divId');
 const questionEl = document.getElementById('question-bar');
