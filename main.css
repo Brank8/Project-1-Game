@@ -34,7 +34,7 @@ body {
 
 .game-title {
     font-size: 20px;
-    font-family: fantasy;
+    font-family: fantasy, "Times New Roman", Times, serif;
     padding: 10px;
     margin-bottom: 10px;
 }
@@ -66,8 +66,8 @@ body {
     border-style: double;
     border-radius: 1rem;
     font-size:large;
-    width: 80%;
-    margin-left: 9%;
+    width: 90%;
+    margin-left: 4%;
     margin-top: 5px;
 }
 
