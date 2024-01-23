@@ -132,4 +132,7 @@ body {
         border: 10px solid rgb(21, 231, 203);
         width: 75%;
     }
+    .game-title {
+        font-size: 15px;
+    }
 }
