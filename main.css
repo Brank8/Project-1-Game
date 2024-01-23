@@ -14,9 +14,10 @@ body {
     border-radius: 1rem;
     padding-top: 10px;
     max-width: 500px;
-    min-width: 500px;
-    max-height: 740px;
-    min-height: 740px;
+    width: 90%;
+    /* min-width: 480px; */
+    /* max-height: 740px; */
+    /* min-height: 740px; */
 }
 
 .titleUnderline {
@@ -32,15 +33,15 @@ body {
 }
 
 .game-title {
-    font-size: 25px;
+    font-size: 20px;
     font-family: fantasy;
-    padding: 15px;
-    margin-bottom: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
 .game-graphic, .you-win, .you-lose {
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
     border-radius: 10px;
 }
 
@@ -49,10 +50,10 @@ body {
     border: 5px solid rgb(214, 123, 201);
     border-style: solid none dashed none;
     border-radius: 5rem;
-    font-size: 40px;
+    font-size: 30px;
     color: rgb(233, 72, 163);
-    padding: 50px 100px;
-    margin: 55px 50px 70px 50px;
+    padding: 20px 40px;
+    margin: 74px;
 }
 
 .start-button-class:hover, .reset-class:hover {
@@ -64,19 +65,20 @@ body {
     border: 5px solid white;
     border-style: double;
     border-radius: 1rem;
-    font-size:larger;
-    padding: .3rem;
-    margin: 10px 10px 10px 10px;
+    font-size:large;
+    width: 80%;
+    margin-left: 9%;
+    margin-top: 5px;
 }
 
 .answer-button-wrapper button{
     background-color: yellow;
     border: 5px solid orange;
     border-radius: 1rem;
-    width: 168px;
+    width: 150px;
     height: 60px;
-    font-size: larger;
-    margin: 15px 40px 15px 40px;
+    font-size: large;
+    margin: 10px;
 }
 
 .answer-button-wrapper :hover {
@@ -94,7 +96,7 @@ body {
 }
 
 .score-class {
-    font-size: x-large;
+    font-size: larger;
     color: rgb(255, 255, 255);
     padding: 11px;
     border: 10px solid rgb(109, 191, 198);
@@ -104,24 +106,30 @@ body {
     border-right: none;
 }
 
-@media (max-width: 600px) {
-    .container {
-        width: 100vw;
-        height: 100vh;
-        overflow: auto;
+@media screen and (max-width: 600px) {
+    .question-display-wrapper {
+        font-size: 13px;
     }
-}
-@media (min-width: 601px) and (max-width: 1024px) {
-    .container {
-        width: 100vw;
-        height: 100vh;
-        overflow: auto;
+    .score-class {
+        font-size: medium;
     }
-}
-@media (min-width: 1025px) {
+    .game-graphic, .you-win, .you-lose {
+        height: 200px;
+        width: 200px;
+    }
+    .answer-button-wrapper button{
+        width: 130px;
+        height: 50px;
+        font-size: 13px;
+        margin: 5px;
+        border: 3px solid orange;
+    }
+    .start-button-class, .reset-class {
+        font-size: 20px;
+        margin: 43px 40px 60px 40px;
+    }
     .container {
-        width: 100vw;
-        height: 100vh;
-        overflow: auto;
+        border: 10px solid rgb(21, 231, 203);
+        width: 75%;
     }
 }

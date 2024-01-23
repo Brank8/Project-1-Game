@@ -275,7 +275,7 @@ const questions = [
     correctAnswer: 'd'
 },
     {
-        question: 'How many official languages are spoken in India?',
+        question: 'How many languages are spoken in India?',
     answers: {
         a: '22',
         b: '1',
