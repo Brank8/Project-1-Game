@@ -113,8 +113,10 @@ body {
 }
 
 .copyright {
-    padding-bottom: 3px;
+    /* padding-bottom: 3px; */
     font-size: medium;
+    position: fixed;
+    bottom: 1px;
   }
   
     .navLogo {
