@@ -118,8 +118,8 @@ body {
   }
   
     .navLogo {
-      position: absolute;
-      left: 2px;
+      position: fixed;
+      left: 5px;
       bottom: 5px;
       height: 75px;
     }
@@ -138,6 +138,15 @@ body {
         margin-top: auto;
     }
 
+    @media only screen and (max-width: 299px){
+        .navLogo {
+            height: 50px;
+        }
+        .copyright {
+          text-align: center;
+          font-size: 7px;
+      }
+    }
       @media only screen and (max-width: 375px) and (min-width: 300px){
         .navLogo {
             height: 60px;
