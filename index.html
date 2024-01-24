@@ -10,13 +10,13 @@
 <body>
     <main class="container hide">
     <header>
-        <section id="game-title-id" class="game-title"><span id="span-id"><a href="https://github.com/Brank8" target="_blank" rel="noreferrer noopener" class="titleUnderline">TRIVIAGRAPHY🌍</a></span></section>
+        <section id="game-title-id" class="game-title"><span id="span-id"><a href="https://github.com/Brank8" target="_blank" rel="noreferrer noopener" class="titleUnderline">TRIVIAGRAPHY 🌍</a></span></section>
     </header>
     
         <section id="main-picture" class="main-picture-wrapper">
-            <img id="game-pic" src="newpic.png" class="game-graphic hide">
-            <img id="game-pic2" src="YouWIn.png" class=" you-win hide">
-            <img id="game-pic3" src="YouLose.png" class="you-lose hide">
+            <img id="game-pic" src="newpic.png" class="game-graphic hide" draggable="false">
+            <img id="game-pic2" src="YouWIn.png" class=" you-win hide" draggable="false">
+            <img id="game-pic3" src="YouLose.png" class="you-lose hide" draggable="false">
         </section>
 
         <button id="start-button" class="start-button-class">Start Quiz</button>
@@ -27,15 +27,23 @@
         </section>
 
         <section id="answer-button" class="answer-button-wrapper">
+            <div class="row">
             <button id="a" class="answer">Answer A</button>
             <button id="b" class="answer">Answer B</button>
+        </div>
+        <div class="row">
             <button id="c" class="answer">Answer C</button>
             <button id="d" class="answer">Answer D</button>
+            </div>
         </section>
 
     </div>
     <button id="reset-button" class="reset-class hide">Play Again</button>
     <section id="score-id" class="score-class">YOUR SCORE = <span id="spanScore">?</span> / 20 &#127937</section>
-    </main>           
+    </main>
 </body>
+<div class="footer">
+    <a href="https://github.com/Brank8" target="_blank" rel="noopener noreferrer"><img src="./bs.png" class="navLogo" draggable="false"/></a>
+<p class="copyright">&copy; 2024 Branko Stanisic. All rights reserved.</p>
+</div>
 </html>

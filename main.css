@@ -1,10 +1,18 @@
+html, body {
+    height: 100vh;
+    /* margin: 0; */
+}
+
 body {
     display: flex;
-    height: 95vh;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    overflow: hidden;
     background-color: rgb(45, 125, 96);
 }
+
 
 .container {
     background-color: rgb(74, 134, 232);
@@ -15,9 +23,7 @@ body {
     padding-top: 10px;
     max-width: 500px;
     width: 90%;
-    /* min-width: 480px; */
-    /* max-height: 740px; */
-    /* min-height: 740px; */
+    margin-top: 10vh;
 }
 
 .titleUnderline {
@@ -106,6 +112,57 @@ body {
     border-right: none;
 }
 
+.copyright {
+    padding-bottom: 3px;
+    font-size: medium;
+  }
+  
+    .navLogo {
+      position: absolute;
+      left: 2px;
+      bottom: 5px;
+      height: 75px;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+        height: auto;
+        color: black;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        gap: 10px;
+        margin-top: auto;
+    }
+
+      @media only screen and (max-width: 375px) and (min-width: 300px){
+        .navLogo {
+            height: 60px;
+        }
+      }
+    
+      @media only screen and (max-width: 400px) and (min-width: 376px){
+        .navLogo {
+            height: 60px;
+        }
+      }
+    
+      @media only screen and (max-width: 430px) and (min-width: 401px){
+        .navLogo {
+            height: 60px;
+        }
+      }
+ 
+      @media only screen and (max-width: 450px) and (min-width: 300px) {
+        .copyright {
+          text-align: center;
+          font-size: 65%;
+        }
+      }
+
 @media screen and (max-width: 600px) {
     .question-display-wrapper {
         font-size: 13px;
@@ -118,11 +175,23 @@ body {
         width: 200px;
     }
     .answer-button-wrapper button{
-        width: 130px;
+        width: 150px;
         height: 50px;
         font-size: 13px;
-        margin: 5px;
+        margin: 10px;
         border: 3px solid orange;
+    }
+    .answer-button-wrapper {
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10%;
+    }
+    .row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
     }
     .start-button-class, .reset-class {
         font-size: 20px;
@@ -130,7 +199,7 @@ body {
     }
     .container {
         border: 10px solid rgb(21, 231, 203);
-        width: 85%;
+        width: 90%;
     }
     .game-title {
         font-size: 15px;
